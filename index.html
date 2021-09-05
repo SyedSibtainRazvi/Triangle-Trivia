@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Triangle Trivia</title>
+</head>
+
+<body>
+    <nav class="primary-header">
+        <img src="Logo.png" alt="Sibtain" width="120px" height="auto">
+        <div class="nav-links">
+            <ul>
+                <li> <a href="https://github.com/SyedSibtainRazvi/Cash-Register">&lt/Code&gt</a></li>
+                <li> <a href="https://sibtain.netlify.app/">&lt/Portfolio&gt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Triangle Trivia</h1>
+    <section>
+        <h2>Check If Triangle</h2>
+        <p>Fill up three angles and check if it makes a triangle?</p>
+        <div>
+            <label for="angle-input">Angle 1</label>
+            <input type="number" class="angle-input">
+            <label for="angle-input">Angle 2</label>
+            <input type="number" class="angle-input">
+            <label for="angle-input">Angle 3</label>
+            <input type="number" class="angle-input">
+            <button id="check-button1">Check If Triangle</button>
+            <div id="output1"></div>
+        </div>
+    </section>
+    <section class="quiz">
+        <h2>Quiz On Triangles</h2>
+        <form class="quiz-form">
+            <div class="question-container">
+                <p>Question 2: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label> <input type="radio" value="45" name="question1">45°</label>
+                <label> <input type="radio" value="60" name="question1">60°</label>
+                <label> <input type="radio" value="90" name="question1">90°</label>
+            </div>
+            <div class="question-container">
+                <p>Question 2: What is the name of the triangle whose all three angles are 60°? <br> a) Right Angled
+                    Triangle b) Equilateral Triangle c) Isosceles Triangle</p>
+                <label> <input type="radio" value="Right" name="question2">a
+                </label>
+                <label> <input type="radio" value="Equilateral" name="question2">b
+                </label>
+                <label> <input type="radio" value="Isosceles" name="question2">c
+                </label>
+            </div>
+        </form>
+        <button id="submit-button-quiz">Submit Answer</button>
+        <div id="output-quiz"></div>
+    </section>
+    <section>
+        <h2>Calculate Hypotenuse</h2>
+        <p>Put length of two sides and calculate the length of Hypotenuse?</p>
+        <div>
+            <label>a (in cm)=</label>
+            <input type="number" class="side-input">
+            <label>b (in cm)=</label>
+            <input type="number" class="side-input">
+            <button id="calculate-hypo">Calculate Hypotenuse</button>
+            <div id="output-hypo">
+            </div>
+    </section>
+    <section>
+        <h2>Calculate Area</h2>
+        <p>If you know the base and height, you can calculate the area of triangle.</p>
+        <div>
+            <label>Base (in cm)=</label>
+            <input type="number" class="area-input">
+            <label>Height (in cm)=</label>
+            <input type="number" class="area-input">
+            <button id="calculate-area">Calculate Area</button>
+            <div id="output-area">
+            </div>
+    </section>
+    <footer class="primary-footer">
+        <div class="icon">
+            <a href="https://github.com/SyedSibtainRazvi"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/syed-sibtain-razvi-919669150/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/SyedSibtain1996"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
