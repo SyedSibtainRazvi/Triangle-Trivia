@@ -26,7 +26,7 @@ const quizForm = document.querySelector(".quiz-form");
 const checkBtn2 = document.querySelector("#submit-button-quiz");
 const output2 = document.querySelector("#output-quiz");
 
-const rightAnswers = ["90", "Equilateral", "Acute", "Scalene", "35", "Isosceles", "10", "One"];
+const rightAnswers = ["90", "Equilateral", "Acute", "Scalene", "35", "Isosceles", "10", "One", "Three", "12"];
 
 function checkScore() {
 

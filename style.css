@@ -69,8 +69,15 @@ section {
     text-align: center;
     margin: 3rem auto;
     width: 70vw;
-    height: 100vh;
+    height: 1000px;
     border-radius: 4px;
+    margin: 3rem auto;
+    background-color: #F7FFF6;
+    border-radius: 4px;
+}
+
+.question-container{
+    margin: 1rem 0;
 }
 
 .input-form {
@@ -152,7 +159,7 @@ section:hover {
 
     .quiz {
         width: 90vw;
-        height: 70vh;
+        height: 1380px;
     }
 
     input {
