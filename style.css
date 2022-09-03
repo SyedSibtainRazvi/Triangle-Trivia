@@ -57,14 +57,19 @@ section {
     border-radius: 4px;
 }
 
+.quiz-container {
+    display: flex;
+
+}
+
 .quiz {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 3rem auto;
-    width: 50vw;
-    height: 50vh;
+    width: 70vw;
+    height: 100vh;
     border-radius: 4px;
 }
 
@@ -138,6 +143,7 @@ section:hover {
 .icon .fa:hover {
     color: grey;
 }
+
 @media (max-width:700px) {
     section {
         width: 90vw;
@@ -154,4 +160,3 @@ section:hover {
         height: 3vh;
     }
 }
-
