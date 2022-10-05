@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root{
-    --primary-color: #5CC8FF;
+    --primary-color: #fc8181;
     --secondary-color:#212738;
     --off-white:#fff1f2;
     --primary-text: #0c4a6e;
@@ -45,6 +45,7 @@ main{
  .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+    color: #fc8181;
    
  }
 
@@ -79,6 +80,7 @@ main{
 
  h1{
     font-size: 1.7rem;
+    color: #fc8181;
  }
  
 
