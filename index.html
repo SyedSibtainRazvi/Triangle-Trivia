@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Triangle Trivia</title>
+    <title>Quiz on Triangles</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
     <nav class="primary-header">
         <img src="Logo.png" alt="Sibtain" width="120px" height="auto">
-        <div class="nav-links">
-            <ul>
-                <li> <a href="https://github.com/SyedSibtainRazvi/Triangle-Trivia">&lt/Code&gt</a></li>
-                <li> <a href="https://sibtain.netlify.app/">&lt/Portfolio&gt</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="./screens/triangle.html">Is Triangle?</a>
-            <a href="/">Quiz</a>
-            <a href="./screens/hypo.html">Hypotenuse</a>
-            <a href="./screens/area.html">Area of Triangle</a>
-          </div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a href="./triangle.html" class="link ">Is Triangle?</a></li>
+            <li class="list-item-inline"><a href="./index.html" class="link link-active">Quiz</a></li>
+            <li class="list-item-inline"><a href="./hypo.html" class="link  ">Hypotenuse</a></li>
+            <li class="list-item-inline"><a href="./area.html" class="link ">Area</a></li>
+        </ul>
     </nav>
-    <h1>Triangle Trivia</h1>
-    <div class="quiz">
-        <h2>Quiz On Triangles</h2>
-        <form class="quiz-form">
-            <div class="question-container">
-                <p><b>Question 1: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</b></p>
-                <label> <input type="radio" value="45" name="question1">45°</label>
-                <label> <input type="radio" value="60" name="question1">60°</label>
-                <label> <input type="radio" value="90" name="question1">90°</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 2: What is the name of the triangle whose all three angles are 60°? </b></p>
-                <label> <input type="radio" value="Equilateral" name="question2">Equilateral triangle</label>
-                <label> <input type="radio" value="Isosceles" name="question2">Isosceles triangle</label>
-                <label> <input type="radio" value="Right" name="question2">Right triangle</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 3: What are the other two angles of a right angled triangle?</b></p>
-                <label> <input type="radio" value="Right" name="question3">Right Angles</label>
-                <label> <input type="radio" value="Obtuse" name="question3">Obtuse Angles</label>
-                <label> <input type="radio" value="Acute" name="question3">Acute Angles</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 4: A triangle having sides of different lengths is called?</b></p>
-                <label> <input type="radio" value="Equilateral" name="question4"> Equilateral triangle</label>
-                <label> <input type="radio" value="Isosceles" name="question4"> Isosceles triangle</label>
-                <label> <input type="radio" value="Scalene" name="question4"> Scalene triangle</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 5: What are the two equal angles for the triangle where one of the angle is 110°?</b></p>
-                <label> <input type="radio" value="35" name="question5">35°</label>
-                <label> <input type="radio" value="40" name="question5">40°</label>
-                <label> <input type="radio" value="30" name="question5">30°</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 6: A triangle having two equal sides is called?</b></p>
-                <label> <input type="radio" value="Equilateral" name="question6"> Equilateral triangle</label>
-                <label> <input type="radio" value="Isosceles" name="question6"> Isosceles triangle</label>
-                <label> <input type="radio" value="Scalene" name="question6"> Symmetrical triangle</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 7: What is the area of the triangle if its base is 5cm and height 4cm?</b></p>
-                <label> <input type="radio" value="9" name="question7"> 9 cm square</label>
-                <label> <input type="radio" value="11" name="question7"> 11 cm square</label>
-                <label> <input type="radio" value="10" name="question7"> 10 cm square</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 8: A triangle can have how many right angles?</b></p>
-                <label> <input type="radio" value="One" name="question8">One</label>
-                <label> <input type="radio" value="Two" name="question8">Two </label>
-                <label> <input type="radio" value="Three" name="question8">Three</label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 9: A triangle can have how many medians?</b></p>
-                <label> <input type="radio" value="Three" name="question9">Three</label>
-                <label> <input type="radio" value="One" name="question9">One</label>
-                <label> <input type="radio" value="Two" name="question9">Two </label>
-            </div>
-            <div class="question-container">
-                <p><b>Question 10: What is the perimeter of the triangle with all sides as 4cm?</b></p>
-                <label> <input type="radio" value="12" name="question10"> 12 cm</label>
-                <label> <input type="radio" value="10" name="question10"> 10 cm</label>
-                <label> <input type="radio" value="5" name="question10"> 5 cm</label>
-            </div>
+    <main>
+        <h1>Quiz on triangles</h1>
+        <p class="description">You can score 1 point on every correct answer!</p>
+        <form id="quiz-form">
+        <div class="question-container">
+            <p  id="questionOne"  class="optiondiv">Question 1: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <div class="optiondiv"><label class="radio-label"><input type="radio"  name="optionOne" value="45" class="radio-input">45°</label></div>
+            <div class="optiondiv"><label class="radio-label"><input type="radio"  name="optionOne" value="60" class="radio-input">60°</label></div>
+            <div class="optiondiv"><label class="radio-label"><input type="radio"  name="optionOne" value="90" class="radio-input">90°</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionTwo" class="optiondiv">Question 2: What is the name of the triangle whose all three angles are 60°? </p>
+            <div class="optiondiv"><label><input type="radio"  name="optionTwo" value="Equilateral" class="radio-input">Equilateral triangle</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionTwo" value="Isoceles" class="radio-input">Isoceles triangle</label></div>
+            <div class="optiondiv"><label><input type="radio" name="optionTwo" value="Right" class="radio-input">Right triangle</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionThree" class="optiondiv">Question 3: What are the other two angles of a right angled triangle?</p>
+            <div class="optiondiv"><label><input type="radio" name="optionThree" value="Right" class="radio-input">Right Angles</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionThree" value="Obtuse" class="radio-input">Obtuse Angles</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionThree" value="Acute" class="radio-input">Acute Angles</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionFour" class="optiondiv">Question 4: A triangle having sides of different lengths is called?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionFour" value="Equilateral" class="radio-input">Equilateral triangle</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionFour" value="Isosceles" class="radio-input">Isosceles triangle</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionFour" value="Scalene" class="radio-input">Scalene triangle</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionFive" class="optiondiv">Question 5: What are the two equal angles for the triangle where one of the angle is 110°?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionFive" value="35" class="radio-input">35°</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionFive" value="40" class="radio-input">40°</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionFive" value="30" class="radio-input">30°</label></div>
+        </div>
+
+        <div class="question-container">
+            <p id="questionSix" class="optiondiv">
+                Question 6: A triangle having two equal sides is called?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionSix" value="Equilateral" class="radio-input">Equilateral triangle</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionSix" value='Isosceles' class="radio-input">Isosceles triangle</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionSix" value="Symmetrical" class="radio-input">Symmetrical triangle</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionSeven" class="optiondiv">
+                Question 7: What is the area of the triangle if its base is 5cm and height 4cm?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionSeven" value="9" class="radio-input">9 cm square</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionSeven" value='11' class="radio-input">11 cm square</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionSeven" value="10" class="radio-input">10 cm square</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionEight" class="optiondiv">
+                Question 8: A triangle can have how many right angles?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionEight" value="One" class="radio-input">One</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionEight" value='Two' class="radio-input">Two</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionEight" value="Three" class="radio-input">Three</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionNine" class="optiondiv">
+                Question 9: A triangle can have how many medians?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionNine" value="Three" class="radio-input">Three</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionNine" value='One' class="radio-input">One</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionNine" value="Two" class="radio-input">Two</label></div>
+        </div>
+        <div class="question-container">
+            <p id="questionTen" class="optiondiv">
+                Question 10: What is the perimeter of the triangle with all sides as 4cm?</p>
+            <div class="optiondiv"><label><input type="radio"  name="optionTen" value="12" class="radio-input">12 cm</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionTen" value="10" class="radio-input">10 cm</label></div>
+            <div class="optiondiv"><label><input type="radio"  name="optionTen" value="5" class="radio-input">5 cm</label></div>
+        </div>
         </form>
-        <button id="submit-button-quiz">Submit Answer</button>
-        <div id="output-quiz"></div>
-    </div>
+        <button id="btn-answer" class="link-primary">Submit Answers</button>
+        <h2 id="score-div" class='mesage'>
+        </h2>
+    </main>
     <footer class="primary-footer">
         <div class="icon">
             <a href="https://github.com/SyedSibtainRazvi"><i class="fa fa-github"></i></a>
@@ -101,7 +100,6 @@
             <a href="https://twitter.com/SyedSibtain1996"><i class="fa fa-twitter"></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
-
 </html>

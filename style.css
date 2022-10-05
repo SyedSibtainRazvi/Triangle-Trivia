@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root{
+    --primary-color: #5CC8FF;
+    --secondary-color:#212738;
+    --off-white:#fff1f2;
+    --primary-text: #0c4a6e;
+    --secondary-text: #0f172a;
+    
 }
 
-body {
+body{
     font-family: 'Open Sans', sans-serif;
-}
-
-:root {
-    --primaryColor: #5CC8FF;
-    --secondaryColor: #212738;
+    margin: 0px .4px 0px 0.4px;
+    
 }
 
 .primary-header {
@@ -26,105 +26,124 @@ body {
     box-shadow: 10px 5px 5px #EEEEEE;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 .5rem;
-}
-
-.nav-links ul li a:hover {
-    color: grey;
-}
-
-.nav-links ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0 .5rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main{
+    margin: auto;
     text-align: center;
-    margin: 3rem auto;
-    width: 50vw;
-    height: 30vh;
-    background-color: #F7FFF6;
-    border-radius: 4px;
-}
 
-.quiz-container {
-    display: flex;
-
-}
-
-.quiz {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 3rem auto;
-    width: 70vw;
-    height: 1000px;
-    border-radius: 4px;
-    margin: 3rem auto;
-    background-color: #F7FFF6;
-    border-radius: 4px;
 }
 
 .question-container{
-    margin: 1rem 0;
+    max-width: 600px;
+    margin: 4rem auto;
 }
 
-.input-form {
-    padding: .1rem;
+ .container{
+    padding: 0rem 0.5rem;
+ }
+
+
+ .link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+ }
+
+ .link-active{
+    font-weight: bold;
+ }
+
+ .link-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;  
+    padding: 0.8rem 1rem;
+    border: none;
+    font-size: x-large;
+    margin: 2rem 1rem;
+ }
+
+ .link-secondary {
+    border: 1.5px solid var(--primary-color);
+    border-radius: 0.5rem;
+    display: block;
+    font-size: large;
+    padding: 0.5rem;
+    margin:0.5rem auto 1rem auto;
+    
+ }
+.label-link-secondary{
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+ }
+
+ h1{
+    font-size: 1.7rem;
+ }
+ 
+
+ .list-item-inline {
+    display: inline;
+    padding: 0rem 0rem 0rem 0rem;
+ }
+
+ .list-non-bullet {
+    list-style: none;
+ }
+
+ .navigation .nav-brand {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+ }
+
+ .navigation {
+    background-color: var(--primary-color);
+    color:white;
+    padding: 1rem 0.7rem;    
+    font-weight: 500;
+    font-size: large;
+
+ }
+
+ .navigation .link {
+    color: white;
+    
+ }
+
+ .navigation .nav-pills {
+    text-align: right;
+ }
+
+ .optiondiv{
+    margin: 0.8rem;
+    text-align: left;
+ }
+
+
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+    display: inline;
+    
 }
 
-h1 {
-    color: var(--secondaryColor);
-    padding: 1rem;
-    margin: 1rem auto;
+.footer ul{
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+.ul-section{
+    padding-inline-start: 0px;
+}
+
+.mesage{
+    margin-top: 0rem;
+    height: 6rem;
+    color: var(--primary-color);
     text-align: center;
-}
-
-h2 {
-    color: var(--primaryColor);
-    padding: 0.5rem;
-    margin: .7rem auto;
-
-}
-
-p {
-    padding: .3rem;
-    margin: 0.2rem;
-}
-
-input {
-    width: 8vw;
-    height: 3vh;
-    border: 1px solid var(--secondaryColor);
-    border-radius: 4px;
-    padding: .3rem;
-}
-
-button {
-    padding: 0.5rem;
-    margin: 1rem 1rem;
-    border-radius: 4px;
-    border: 1px solid var(--primaryColor);
-}
-
-label {
-    margin: 0.1rem;
-}
-
-section:hover {
-    box-shadow: 2px 2px 4px black;
-    transition: 0.7s;
 }
 
 .primary-footer {
@@ -149,21 +168,4 @@ section:hover {
 
 .icon .fa:hover {
     color: grey;
-}
-
-@media (max-width:700px) {
-    section {
-        width: 90vw;
-        height: 50vh;
-    }
-
-    .quiz {
-        width: 90vw;
-        height: 1380px;
-    }
-
-    input {
-        width: 10vw;
-        height: 3vh;
-    }
 }
